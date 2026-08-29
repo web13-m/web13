@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB13</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1ea;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .bienvenida {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .bienvenida h2 {
+            font-size: 32px;
+        }
+
+        .bienvenida p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .categorias {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .categoria {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .categoria h3 {
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 30px;
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEB13</h1>
+        <p>Un lugar para guardar, compartir y explorar.</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Escritos</a>
+        <a href="#">Fotos</a>
+        <a href="#">Videos</a>
+        <a href="#">Información</a>
+        <a href="#">Archivo</a>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida">
+            <h2>Bienvenida a WEB13</h2>
+            <p>
+                Este es un espacio para publicar de todo:
+                ideas, pensamientos, fotografías, videos,
+                información, noticias, historias y cualquier
+                otra cosa que quiera guardar aquí.
+            </p>
+        </section>
+
+        <section class="categorias">
+
+            <div class="categoria">
+                <h3>✍️ Escritos</h3>
+                <p>Textos, pensamientos, historias y reflexiones.</p>
+            </div>
+
+            <div class="categoria">
+                <h3>📷 Fotos</h3>
+                <p>Fotografías y galerías.</p>
+            </div>
+
+            <div class="categoria">
+                <h3>🎥 Videos</h3>
+                <p>Videos y contenido audiovisual.</p>
+            </div>
+
+            <div class="categoria">
+                <h3>📰 Noticias</h3>
+                <p>Noticias y temas interesantes.</p>
+            </div>
+
+            <div class="categoria">
+                <h3>📚 Información</h3>
+                <p>Datos, investigaciones y otros.</p>
+            </div>
+
+            <div class="categoria">
+                <h3>📁 Archivo</h3>
+                <p>Un lugar para reunir todo el contenido.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        WEB13
+    </footer>
+
+</body>
+</html>
