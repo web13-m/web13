@@ -51,8 +51,8 @@
         }
 
         main {
-            max-width: 1000px;
-            margin: 50px auto;
+            flex: 1;
+            margin: 0;
             padding: 0 20px;
         }
 
@@ -69,10 +69,21 @@
             font-size: 18px;
             line-height: 1.6;
         }
+.layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
 
+.menu-lateral {
+    width: 230px;
+    flex-shrink: 0;
+}
         .categorias {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 20px;
         }
 
@@ -107,14 +118,50 @@
         <p>Un lugar para guardar, compartir y explorar.</p>
     </header>
 
-    <nav>
-       <a href="#inicio">Inicio</a>
-        <a href="#">Escritos</a>
-        <a href="#">Fotos</a>
-        <a href="#">Videos</a>
-        <a href="#">Información</a>
-        <a href="#">Archivo</a>
-    </nav>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="escritos.html">Escritos</a>
+    <a href="fotos.html">Fotos</a>
+    <a href="videos.html">Videos</a>
+    <a href="informacion.html">Información</a>
+    <a href="archivo.html">Archivo</a>
+</nav>
+
+   <div class="layout">
+
+    <aside class="menu-lateral">
+
+        <section class="categorias">
+
+         <a href="escritos.html" class="categoria">
+                <h3>✍️ Escritos</h3>
+                <p>Textos, historias y reflexiones.</p>
+            </a>
+
+            <a href="fotos.html" class="categoria">
+    <h3>📷 Fotos</h3>
+    <p>Fotografías y galerías.</p>
+</a>
+
+<a href="videos.html" class="categoria">
+    <h3>🎥 Videos</h3>
+    <p>Videos y contenido audiovisual.</p>
+</a>
+
+<a href="informacion.html" class="categoria">
+    <h3>📚 Información</h3>
+    <p>Datos, investigaciones y otros.</p>
+</a>
+
+<a href="archivo.html" class="categoria">
+    <h3>📁 Archivo</h3>
+    <p>Un lugar para reunir todo el contenido.</p>
+</a>
+
+        </section>
+
+
+    </aside>
 
     <main>
 
@@ -125,39 +172,7 @@
             </p>
         </section>
 
-       <section class="categorias">
-
-         <a href="escritos.html" class="categoria">
-                <h3>✍️ Escritos</h3>
-                <p>Textos, pensamientos, historias y reflexiones.</p>
-            </a>
-
-            <div class="categoria">
-                <h3>📷 Fotos</h3>
-                <p>Fotografías y galerías.</p>
-            </div>
-
-            <div class="categoria">
-                <h3>🎥 Videos</h3>
-                <p>Videos y contenido audiovisual.</p>
-            </div>
-
-            <div class="categoria">
-                <h3>📰 Noticias</h3>
-                <p>Noticias y temas interesantes.</p>
-            </div>
-
-            <div class="categoria">
-                <h3>📚 Información</h3>
-                <p>Datos, investigaciones y otros.</p>
-            </div>
-
-            <div class="categoria">
-                <h3>📁 Archivo</h3>
-                <p>Un lugar para reunir todo el contenido.</p>
-            </div>
-
-        </section>
+       
   <section id="escritos" class="contenido">
 
     <h2>📝 Escritos</h2>
@@ -180,7 +195,7 @@
  
     </main>
 
-    <footer>
+   </div>
         WEB13
     </footer>
 
