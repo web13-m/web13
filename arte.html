@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEB13 - Arte</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .contenido {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .contenido h2 {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 10px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .volver:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 70px;
+            padding: 30px;
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEB13</h1>
+        <p>Un lugar para guardar, compartir y explorar.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="escritos.html">Escritos</a>
+        <a href="fotos.html">Fotos</a>
+        <a href="videos.html">Videos</a>
+        <a href="informacion.html">Información</a>
+        <a href="archivos.html">Archivo</a>
+    </nav>
+
+    <main>
+
+        <section class="contenido">
+
+            <h2>🎨 Arte</h2>
+
+            <div class="galeria">
+
+                <img src="Imagen1.jpg" alt="Obra de arte 1">
+
+                <img src="Imagen2.png" alt="Obra de arte 2">
+
+                <img src="Imagen3.jpg" alt="Obra de arte 3">
+
+            </div>
+
+            <a href="fotos.html" class="volver">
+                ← Volver a Fotos
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        WEB13
+    </footer>
+
+</body>
+
+</html>
