@@ -64,6 +64,12 @@ section {
     background: white;
     padding: 20px;
     border: 1px solid #ddd;
+    aspect-ratio: 1 / 1;
+}
+        .noticia img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
         .bienvenida p {
             color: #00ff00;
@@ -465,19 +471,23 @@ section {
 
     <div class="noticias-grid">
 
-        <article class="noticia">
-            <h3>Primera noticia</h3>
-            <p>
-                Aquí irá el contenido de la primera noticia.
-            </p>
         </article>
 
-        <article class="noticia">
-            <h3>Segunda noticia</h3>
-            <p>
-                Aquí irá el contenido de la segunda noticia.
-            </p>
-        </article>
+<article class="noticia">
+
+    <h3>Segunda noticia</h3>
+
+    <p class="fecha">
+        20 septiembre 2026
+    </p>
+
+    <p>
+        Aquí irá el contenido de la segunda noticia.
+    </p>
+
+    <img src="imagen-noticia-2.jpg" alt="Segunda noticia">
+
+</article>
 
     </div>
 
